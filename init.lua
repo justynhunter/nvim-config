@@ -17,6 +17,7 @@ require("lazy").setup({
 	"nvim-lua/plenary.nvim",
 	"ellisonleao/gruvbox.nvim", priority = 100, config = true,
 	"nvim-treesitter/nvim-treesitter",
+    {"savq/melange-nvim"},
 	"theprimeagen/harpoon",
 	"mbbill/undotree",
 	"tpope/vim-fugitive",
