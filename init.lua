@@ -44,6 +44,7 @@ require("lazy").setup({
         'folke/which-key.nvim',
         lazy = true,
     },
+    {"vijaymarupudi/nvim-fzf"},
 })
 
 

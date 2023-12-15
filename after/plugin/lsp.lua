@@ -34,11 +34,17 @@ end)
 require("mason").setup({})
 require("mason-lspconfig").setup({
 	ensure_installed = {
+        -- javascript
         "tsserver",
         "eslint",
+        -- go
+        "gopls",
+        "golangci_lint_ls",
+        -- other
         "rust_analyzer",
         "elixirls",
-        --"lua-ls",
+        "omnisharp",
+        "lua_ls",
     },
 	handlers = {
 		lsp.default_setup,
