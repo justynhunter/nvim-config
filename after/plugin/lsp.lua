@@ -45,6 +45,7 @@ require("mason-lspconfig").setup({
         "elixirls",
         "omnisharp",
         "lua_ls",
+        "marksman",
     },
 	handlers = {
 		lsp.default_setup,
