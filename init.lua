@@ -1,5 +1,6 @@
 require("justynhunter")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -21,6 +22,14 @@ require("lazy").setup({
 	"ellisonleao/gruvbox.nvim", priority = 100, config = true,
 	"nvim-treesitter/nvim-treesitter",
     {"savq/melange-nvim"},
+    {"jacoborus/tender.vim"},
+    {
+        "AlexvZyl/nordic.nvim",
+        lazy = false,
+        config = function()
+            require 'nordic' .load()
+        end
+    },
 	"theprimeagen/harpoon",
 	"mbbill/undotree",
 	"tpope/vim-fugitive",
@@ -45,6 +54,16 @@ require("lazy").setup({
         lazy = true,
     },
     {"vijaymarupudi/nvim-fzf"},
+    {
+        "romgrk/barbar.nvim",
+        dependencies = {
+            "lewis6991/gitsigns.nvim",
+            "nvim-tree/nvim-web-devicons",
+        },
+        init = function() vim.g.barbar_auto_setup = false end,
+        opts = {},
+        version = '^1.0.0',
+    },
 })
 
 
