@@ -19,20 +19,10 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' },
     },
 	"nvim-lua/plenary.nvim",
-	"ellisonleao/gruvbox.nvim", priority = 100, config = true,
 	"nvim-treesitter/nvim-treesitter",
     {"savq/melange-nvim"},
-    {"jacoborus/tender.vim"},
-    {
-        "AlexvZyl/nordic.nvim",
-        lazy = false,
-        config = function()
-            require 'nordic' .load()
-        end
-    },
 	"theprimeagen/harpoon",
 	"mbbill/undotree",
-	"tpope/vim-fugitive",
 	{'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
         dependencies = {
@@ -52,17 +42,6 @@ require("lazy").setup({
     {
         'folke/which-key.nvim',
         lazy = true,
-    },
-    {"vijaymarupudi/nvim-fzf"},
-    {
-        "romgrk/barbar.nvim",
-        dependencies = {
-            "lewis6991/gitsigns.nvim",
-            "nvim-tree/nvim-web-devicons",
-        },
-        init = function() vim.g.barbar_auto_setup = false end,
-        opts = {},
-        version = '^1.0.0',
     },
 })
 
