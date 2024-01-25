@@ -43,6 +43,27 @@ require("lazy").setup({
         'folke/which-key.nvim',
         lazy = true,
     },
+    {"vijaymarupudi/nvim-fzf"},
+    --{
+    --    "romgrk/barbar.nvim",
+    --    dependencies = {
+    --        "lewis6991/gitsigns.nvim",
+    --        "nvim-tree/nvim-web-devicons",
+    --    },
+    --    init = function() vim.g.barbar_auto_setup = false end,
+    --    opts = {},
+    --    version = '^1.0.0',
+    --},
+    {
+        "kylechui/nvim-surround",
+        version = "*", -- Use for stability; omit to use `main` branch for the latest features
+        event = "VeryLazy",
+        config = function()
+            require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+            })
+    end
+    },
 })
 
 
