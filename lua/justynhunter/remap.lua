@@ -26,10 +26,16 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 -- move around splits
 vim.keymap.set("n", "<leader>p", ":split<Enter>")
 vim.keymap.set("n", "<leader>v", ":vsplit<Enter>")
-vim.keymap.set("n", "H", "<C-w>h")
-vim.keymap.set("n", "L", "<C-w>l")
-vim.keymap.set("n", "K", "<C-w>k")
-vim.keymap.set("n", "J", "<C-w>j")
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+
+-- tmux
+-- vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
+-- vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
+-- vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>")
+-- vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>")
 
 -- unmap
 vim.keymap.set("n", "Q", "<nop>")

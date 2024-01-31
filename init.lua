@@ -21,6 +21,11 @@ require("lazy").setup({
 	"nvim-lua/plenary.nvim",
 	"nvim-treesitter/nvim-treesitter",
     {"savq/melange-nvim"},
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000
+    },
 	"theprimeagen/harpoon",
 	"mbbill/undotree",
 	{'VonHeikemen/lsp-zero.nvim',
@@ -44,16 +49,6 @@ require("lazy").setup({
         lazy = true,
     },
     {"vijaymarupudi/nvim-fzf"},
-    --{
-    --    "romgrk/barbar.nvim",
-    --    dependencies = {
-    --        "lewis6991/gitsigns.nvim",
-    --        "nvim-tree/nvim-web-devicons",
-    --    },
-    --    init = function() vim.g.barbar_auto_setup = false end,
-    --    opts = {},
-    --    version = '^1.0.0',
-    --},
     {
         "kylechui/nvim-surround",
         version = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -63,6 +58,14 @@ require("lazy").setup({
             -- Configuration here, or leave empty to use defaults
             })
     end
+    },
+    {
+        "christoomey/vim-tmux-navigator",
+        lazy = false,
+    },
+    {
+        "rose-pine/neovim",
+        name = "rose-pine",
     },
 })
 
